@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block content %}
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h1>Welcome to City Univeristy of New York Class Maker</h1>
+
+    {% if login %}
+    <h3>Let's get started.</h3>
+    {% else %}
+    <p>Already registered? <a href="{{url_for('login') }}">Login</a></p>
+    {% endif %}
+
+    <div style="text-align: left">
+      <h2>What is CUNY?</h2>
+
+      <p>
+        The City University of New York is the nation’s largest urban public
+        university, a transformative engine of social mobility that is a
+        critical component of the lifeblood of New York City. Founded in 1847 as
+        the nation’s first free public institution of higher education, CUNY
+        today has 25 colleges spread across New York City’s five boroughs,
+        serving 275,000 degree-seeking students of all ages and awarding 55,000
+        degrees each year. More than 80 percent of the University’s graduates
+        stay in New York, contributing to all aspects of the city’s economic,
+        civic and cultural life and diversifying the city’s workforce in every
+        sector. The University’s historic mission continues to this day: provide
+        a public first-rate education to all students, regardless of means or
+        background.
+      </p>
+
+      <h2>What is Class Maker?</h2>
+
+      <p>
+        Get started with our new Class Maker where you can be able to enroll
+        into different classes based on your interests and major. This
+        comprehensive system will help students choose from a wide variety of
+        classes with ease and will require little to no preperation to help get
+        their semester started! For any questions or concerns, please contact us
+        at cuny@cuny.edu for more assistance!
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}
